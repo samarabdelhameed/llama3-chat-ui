@@ -1,3 +1,4 @@
+/* التصميم الأساسي من React */
 .App {
   text-align: center;
 }
@@ -35,4 +36,73 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* تنسيقات واجهة الدردشة */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.chat-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 300px;
+  margin-bottom: 1rem;
+  background: #f9f9f9;
+  overflow-y: auto;
+}
+
+.bubble {
+  padding: 0.6rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 15px;
+  max-width: 70%;
+  white-space: pre-wrap;
+}
+
+.bubble.user {
+  background-color: #d1e7dd;
+  align-self: flex-end;
+  margin-left: auto;
+  text-align: left;
+}
+
+.bubble.bot {
+  background-color: #e2e3e5;
+  align-self: flex-start;
+  margin-right: auto;
+  text-align: left;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-family: inherit;
+}
+
+button {
+  align-self: flex-end;
+  padding: 0.5rem 1rem;
+  background-color: #198754;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #6c757d;
 }
